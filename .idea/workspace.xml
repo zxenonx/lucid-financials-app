@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="" />
+    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Create utility functions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,6 +87,64 @@
       <option name="presentableId" value="Default" />
       <updated>1749485930085</updated>
     </task>
+    <task id="LOCAL-00001" summary="Create initial project structure">
+      <option name="closed" value="true" />
+      <created>1749499279597</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749499279597</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Set up database and configs">
+      <option name="closed" value="true" />
+      <created>1749500571489</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749500571489</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create User model">
+      <option name="closed" value="true" />
+      <created>1749501389472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749501389472</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Migrate user table">
+      <option name="closed" value="true" />
+      <created>1749501422243</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749501422243</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implement user sign up endpoint">
+      <option name="closed" value="true" />
+      <created>1749501452783</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749501452783</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Create utility functions">
+      <option name="closed" value="true" />
+      <created>1749501733693</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749501733693</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create initial project structure" />
+    <MESSAGE value="Set up database and configs" />
+    <MESSAGE value="Create User model" />
+    <MESSAGE value="Migrate user table" />
+    <MESSAGE value="Implement user sign up endpoint" />
+    <MESSAGE value="Create utility functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create utility functions" />
   </component>
 </project>
