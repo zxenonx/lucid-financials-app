@@ -1,0 +1,36 @@
+[project]
+name = "lucid-financials-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi-cli>=0.0.7",
+    "fastapi-slim>=0.115.12",
+    "mysql-connector-python>=9.3.0",
+    "passlib[bcrypt]>=1.7.4",
+    "pydantic-settings>=2.9.1",
+    "pydantic[email]>=2.11.5",
+    "pymysql>=1.1.1",
+    "python-dotenv>=1.1.0",
+    "python-jose[cryptography]>=3.5.0",
+    "sqlalchemy>=2.0.41",
+    "uvicorn>=0.34.3",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.13",
+    "alembic>=1.13.1",
+]
+
+[tool.ruff]
+line-length = 120
+select = ["E", "F", "W"] # Enable pycodestyle (E), pyflakes (F), and warnings (W)
+ignore = []
+exclude = [".venv", "__pycache__", "migrations"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
