@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Create utility functions">
+    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Set up project structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/auth_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/schemas/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/auth_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/auth_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,14 +31,14 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/deucalion/appz/lucid-financials-app&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/deucalion/appz/lucid-financials-app/app/schemas"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -135,7 +138,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749501733693</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create main.py">
+      <option name="closed" value="true" />
+      <created>1749502448573</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749502448573</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Set up project structure">
+      <option name="closed" value="true" />
+      <created>1749502483996</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749502483996</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -145,6 +164,8 @@
     <MESSAGE value="Migrate user table" />
     <MESSAGE value="Implement user sign up endpoint" />
     <MESSAGE value="Create utility functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create utility functions" />
+    <MESSAGE value="Create main.py" />
+    <MESSAGE value="Set up project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Set up project structure" />
   </component>
 </project>

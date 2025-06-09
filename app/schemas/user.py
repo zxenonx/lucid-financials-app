@@ -7,6 +7,13 @@ class UserCreate(BaseModel):
     email: EmailStr = Field(..., description="User's email address")
     password: constr(min_length=8, max_length=128) = Field(..., description="User password (min 8 chars)")
 
+class UserLogin(BaseModel):
+    """
+    Schema for user login request.
+    """
+    email: EmailStr = Field(..., description="User's email address")
+    password: constr(min_length=8, max_length=128) = Field(..., description="User password (min 8 chars)")
+
 class UserResponse(BaseModel):
     """
     Schema for user response data.
