@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Set up project structure">
+    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Implement login endpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/auth_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/auth_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/auth_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +37,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/schemas" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app" />
@@ -154,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749502483996</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implement login endpoint">
+      <option name="closed" value="true" />
+      <created>1749503562606</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749503562606</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -166,6 +174,7 @@
     <MESSAGE value="Create utility functions" />
     <MESSAGE value="Create main.py" />
     <MESSAGE value="Set up project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up project structure" />
+    <MESSAGE value="Implement login endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement login endpoint" />
   </component>
 </project>
