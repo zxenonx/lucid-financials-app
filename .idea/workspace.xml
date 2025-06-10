@@ -4,8 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Implement login endpoint">
+    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Implement endpoint for add post and get posts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/auth_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/post_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/post_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/middleware/payload_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/payload_size.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repositories/post_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/post_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/repositories/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/user_repository.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/schemas/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas/post.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/schemas/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/auth_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/auth_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/post_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/post_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/hashing.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/hashing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/jwt.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/jwt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uv.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,14 +48,14 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/deucalion/appz/lucid-financials-app/app/schemas"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/deucalion/appz/lucid-financials-app/app/schemas&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/schemas" />
@@ -162,7 +182,39 @@
       <option name="project" value="LOCAL" />
       <updated>1749503562606</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Implement add post endpoint">
+      <option name="closed" value="true" />
+      <created>1749504861592</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1749504861592</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Implement payload size limiter for add_post">
+      <option name="closed" value="true" />
+      <created>1749504890043</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1749504890043</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add migration for Post model">
+      <option name="closed" value="true" />
+      <created>1749549136876</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1749549136876</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Implement endpoint for add post and get posts">
+      <option name="closed" value="true" />
+      <created>1749549200013</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749549200013</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,6 +227,10 @@
     <MESSAGE value="Create main.py" />
     <MESSAGE value="Set up project structure" />
     <MESSAGE value="Implement login endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement login endpoint" />
+    <MESSAGE value="Implement add post endpoint" />
+    <MESSAGE value="Implement payload size limiter for add_post" />
+    <MESSAGE value="Add migration for Post model" />
+    <MESSAGE value="Implement endpoint for add post and get posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement endpoint for add post and get posts" />
   </component>
 </project>

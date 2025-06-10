@@ -22,11 +22,13 @@ dependencies = [
 dev = [
     "ruff>=0.11.13",
     "alembic>=1.13.1",
+    "pytest>=8.4.0",
+    "httpx>=0.28.1",
 ]
 
 [tool.ruff]
 line-length = 120
-select = ["E", "F", "W"] # Enable pycodestyle (E), pyflakes (F), and warnings (W)
+select = ["E", "F", "W"]
 ignore = []
 exclude = [".venv", "__pycache__", "migrations"]
 
