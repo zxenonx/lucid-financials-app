@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Refactor main.py">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Add unit tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,16 +28,17 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/deucalion/appz/lucid-financials-app/app/schemas&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/deucalion/appz/lucid-financials-app"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/schemas" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -250,7 +251,31 @@
       <option name="project" value="LOCAL" />
       <updated>1749588298089</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add .env.example">
+      <option name="closed" value="true" />
+      <created>1749588967992</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1749588967992</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Update README.md">
+      <option name="closed" value="true" />
+      <created>1749588982371</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1749588982371</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add unit tests">
+      <option name="closed" value="true" />
+      <created>1749588994597</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1749588994598</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -274,6 +299,9 @@
     <MESSAGE value="Add delete post endpoint" />
     <MESSAGE value="Refactor docstrings" />
     <MESSAGE value="Refactor main.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor main.py" />
+    <MESSAGE value="Add .env.example" />
+    <MESSAGE value="Update README.md" />
+    <MESSAGE value="Add unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add unit tests" />
   </component>
 </project>
