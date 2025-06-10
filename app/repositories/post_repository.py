@@ -4,6 +4,8 @@ import uuid
 from datetime import datetime
 
 class PostRepository:
+    """Provides database operations related to Post entities."""
+
     @staticmethod
     def create(db: Session, user_id: int, text: str) -> Post:
         """Creates and persists a new post for a user.
@@ -45,3 +47,22 @@ class PostRepository:
             list[Post]: A list of Post objects belonging to the user, ordered by created_at DESC.
         """
         return db.query(Post).filter(Post.user_id == user_id).order_by(Post.created_at.desc()).all()
+
+    @staticmethod
+    def delete(db: Session, user_id: int, post_id: str) -> bool:
+        """Deletes a post by ID for a specific user from the database.
+
+        Args:
+            db (Session): The database session used for deletion.
+            user_id (int): The ID of the user who owns the post.
+            post_id (str): The ID of the post to delete.
+
+        Returns:
+            bool: True if a post was deleted, False otherwise.
+        """
+        post = db.query(Post).filter(Post.id == post_id, Post.user_id == user_id).first()
+        if not post:
+            return False
+        db.delete(post)
+        db.commit()
+        return True
