@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Add unit tests">
+    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Generate requirements.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -275,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749588994598</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Generate requirements.txt">
+      <option name="closed" value="true" />
+      <created>1749590336197</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1749590336197</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -302,6 +310,7 @@
     <MESSAGE value="Add .env.example" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Add unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add unit tests" />
+    <MESSAGE value="Generate requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Generate requirements.txt" />
   </component>
 </project>

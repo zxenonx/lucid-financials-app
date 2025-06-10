@@ -144,7 +144,7 @@ This will apply `ruff`'s recommended fixes to the entire codebase.
   http://localhost:8000/redoc
 
 - **Deployed API Docs:**  
-  https://lucid-financials-app.koyeb.app/docs
+  https://lucid-financials-app.onrender.com/docs
 
 ---
 
