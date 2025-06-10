@@ -171,7 +171,7 @@ This project is licensed under the terms of the LICENSE file in this repo.
 
 ## 📚 Code Style & Documentation
 
-This project follows the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html) for code style and docstring formatting. All functions, classes, and modules should include Google-style docstrings for consistency and maintainability.
+This project follows the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html) for code style and docstring formatting. All functions, classes, and modules include Google-style docstrings for consistency and maintainability.
 
 ## 📖 Additional Resources
 
