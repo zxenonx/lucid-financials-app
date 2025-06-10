@@ -4,28 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Implement endpoint for add post and get posts">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8af58e7f-53ce-449e-a9ac-7a2115856ac7" name="Changes" comment="Refactor main.py">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/auth_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/post_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/post_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/middleware/payload_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/middleware/payload_size.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/post.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repositories/post_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/post_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/repositories/user_repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/repositories/user_repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/post.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas/post.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/auth_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/auth_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/post_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/post_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/hashing.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/hashing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/jwt.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/jwt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uv.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +194,63 @@
       <option name="project" value="LOCAL" />
       <updated>1749549200013</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Add complete docstrings">
+      <option name="closed" value="true" />
+      <created>1749588066624</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749588066624</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fix comments">
+      <option name="closed" value="true" />
+      <created>1749588119749</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749588119749</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Install new dev packages">
+      <option name="closed" value="true" />
+      <created>1749588153543</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1749588153543</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add delete post repository method">
+      <option name="closed" value="true" />
+      <created>1749588200108</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1749588200108</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add delete post endpoint">
+      <option name="closed" value="true" />
+      <created>1749588233746</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1749588233746</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Refactor docstrings">
+      <option name="closed" value="true" />
+      <created>1749588262695</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1749588262695</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Refactor main.py">
+      <option name="closed" value="true" />
+      <created>1749588298089</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1749588298089</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -231,6 +267,13 @@
     <MESSAGE value="Implement payload size limiter for add_post" />
     <MESSAGE value="Add migration for Post model" />
     <MESSAGE value="Implement endpoint for add post and get posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement endpoint for add post and get posts" />
+    <MESSAGE value="Add complete docstrings" />
+    <MESSAGE value="Fix comments" />
+    <MESSAGE value="Install new dev packages" />
+    <MESSAGE value="Add delete post repository method" />
+    <MESSAGE value="Add delete post endpoint" />
+    <MESSAGE value="Refactor docstrings" />
+    <MESSAGE value="Refactor main.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor main.py" />
   </component>
 </project>
