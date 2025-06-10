@@ -103,7 +103,7 @@ DEBUG=True
 4. **Configure environment variables:**
    - Copy `.env.example` to `.env` and edit as needed.
 
-5. **Run database migrations (if using Alembic):**
+5. **Run database migrations:**
    ```bash
    alembic upgrade head
    ```
