@@ -1,11 +1,10 @@
-"""
-Database Configuration and Setup.
+"""Database Configuration and Setup.
 
 This module handles SQLAlchemy database engine, session management,
 and provides the base class for all database models.
 """
 
-from sqlalchemy import create_engine, MetaData, event, inspect
+from sqlalchemy import create_engine, MetaData, inspect
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.pool import QueuePool
@@ -100,21 +99,6 @@ def get_db_context():
         logger.debug("Database context session closed")
         db.close()
 
-
-def _import_models():
-    """
-    Import all models to ensure they are registered with SQLAlchemy.
-    """
-    try:
-        import app.models.user
-        import app.models.post
-
-        logger.info("All models imported successfully")
-    except ImportError as e:
-        logger.error(f"Failed to import models: {e}")
-        raise
-
-
 def init_database():
     """
     Initialize the database by creating all tables.
@@ -124,7 +108,6 @@ def init_database():
     """
     try:
         logger.info("Initializing database...")
-        _import_models()
 
         Base.metadata.create_all(bind=engine)
 
@@ -150,54 +133,9 @@ def drop_database():
     """
     try:
         logger.warning("Dropping all database tables...")
-        _import_models()
 
         Base.metadata.drop_all(bind=engine)
         logger.warning("All database tables dropped")
     except Exception as e:
         logger.error(f"Failed to drop database tables: {e}")
         raise
-
-
-def check_database_connection() -> bool:
-    """
-    Check if the database connection is working.
-
-    Returns:
-        bool: True if connection is successful, False otherwise
-    """
-    try:
-        with engine.connect() as connection:
-            result = connection.execute("SELECT 1")
-            result.fetchone()
-        logger.info("Database connection check successful")
-        return True
-    except Exception as e:
-        logger.error(f"Database connection check failed: {e}")
-        return False
-
-
-def list_tables() -> list:
-    """
-    List all tables in the database.
-
-    Returns:
-        list: List of table names
-    """
-    try:
-        with engine.connect() as connection:
-            result = connection.execute("SHOW TABLES")
-            tables = [row[0] for row in result]
-            logger.info(f"Database tables: {tables}")
-            return tables
-    except Exception as e:
-        logger.error(f"Failed to list tables with SHOW TABLES: {e}")
-        # Fallback to SQLAlchemy inspector
-        try:
-            inspector = inspect(engine)
-            tables = inspector.get_table_names()
-            logger.info(f"Database tables (via inspector): {tables}")
-            return tables
-        except Exception as fallback_error:
-            logger.error(f"Inspector fallback also failed: {fallback_error}")
-            return []
