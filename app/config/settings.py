@@ -9,7 +9,6 @@ from pydantic_settings import BaseSettings
 from pydantic import Field
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
 load_dotenv()
 
 class Settings(BaseSettings):
@@ -70,9 +69,7 @@ class Settings(BaseSettings):
 
     # Payload Configuration
     MAX_PAYLOAD_SIZE_MB: int = Field(
-        default=1,
-        ge=1,
-        le=10,
+        default=1024 * 1024 ,
         description="Maximum payload size in megabytes"
     )
 

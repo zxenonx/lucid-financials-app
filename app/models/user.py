@@ -1,13 +1,11 @@
 from sqlalchemy import Column, Integer, String, DateTime
-from sqlalchemy.orm import declarative_base
+from app.config.database import Base
 import datetime
 try:
     from datetime import UTC
 except ImportError:
     from datetime import timezone
     UTC = timezone.utc
-
-Base = declarative_base()
 
 class User(Base):
     """
