@@ -9,8 +9,8 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-# Import your Base
-from app.models.user import Base
+from app.config.database import Base
+
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

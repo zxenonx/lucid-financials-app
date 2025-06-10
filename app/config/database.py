@@ -106,7 +106,8 @@ def _import_models():
     Import all models to ensure they are registered with SQLAlchemy.
     """
     try:
-        from ..models.user import User
+        import app.models.user
+        import app.models.post
 
         logger.info("All models imported successfully")
     except ImportError as e:
