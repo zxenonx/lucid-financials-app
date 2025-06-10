@@ -1,16 +1,15 @@
 from fastapi import Request, HTTPException, status
+from app.config.settings import settings
 
-def payload_size_limiter(max_bytes: int = 1024 * 1024):
-    """
-    Returns a dependency that limits the size of the request payload.
+def payload_size_limiter(max_bytes: int = settings.MAX_PAYLOAD_SIZE_MB * 1024 * 1024):
+    """Returns a dependency that limits the size of the request payload.
 
     Args:
         max_bytes: The maximum size of the request payload in bytes. Defaults
-            to 1MB.
+            to the value set in settings (MAX_PAYLOAD_SIZE_MB).
 
     Returns:
-        A dependency that raises a 413 error if the payload size
-        exceeds the specified limit.
+        A dependency that raises a 413 error if the payload size exceeds the specified limit.
     """
     async def dependency(request: Request):
         content_length = request.headers.get("content-length")

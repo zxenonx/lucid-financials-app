@@ -6,10 +6,24 @@ from typing import Dict, Any
 
 bearer_scheme = HTTPBearer()
 
-def get_current_user(request: Request, credentials: HTTPAuthorizationCredentials = Security(bearer_scheme)) -> Dict[str, Any]:
-    """
-    Dependency to extract and validate JWT from Authorization header.
-    Returns user info dict if valid, else raises HTTPException.
+def get_current_user(request: Request,
+                     credentials: HTTPAuthorizationCredentials = Security(bearer_scheme)
+                     ) -> Dict[str, Any]:
+    """Extracts and validates the JWT from the Authorization header.
+
+    This dependency retrieves the JWT from the request's Authorization header, decodes and verifies it,
+    and returns the user's information if the token is valid.
+    If the token is missing, invalid, or expired, it raises an HTTPException with 401 Unauthorized.
+
+    Args:
+        request (Request): The incoming HTTP request object.
+        credentials (HTTPAuthorizationCredentials): The bearer token credentials extracted from the header.
+
+    Returns:
+        Dict[str, Any]: A dictionary containing the user's ID and email if authentication is successful.
+
+    Raises:
+        HTTPException: If the token is missing, invalid, expired, or the payload is malformed.
     """
     token = credentials.credentials if credentials else None
     if not token:

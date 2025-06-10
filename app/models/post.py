@@ -18,4 +18,5 @@ class Post(Base):
     id = Column(String(36), primary_key=True, default=lambda: str(uuid.uuid4()), index=True, doc="Post UUID")
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True, doc="User ID")
     text = Column(Text, nullable=False, doc="Post text, max 1MB")
-    created_at = Column(DateTime, default=lambda: datetime.datetime.now(UTC), nullable=False, doc="Post creation timestamp")
+    created_at = Column(DateTime, default=lambda: datetime.datetime.now(UTC), nullable=False,
+                        doc="Post creation timestamp")

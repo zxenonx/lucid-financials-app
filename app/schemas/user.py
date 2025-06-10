@@ -1,23 +1,17 @@
 from pydantic import BaseModel, EmailStr, constr, Field
 
 class UserCreate(BaseModel):
-    """
-    Schema for user signup request.
-    """
+    """Schema for user signup request."""
     email: EmailStr = Field(..., description="User's email address")
     password: constr(min_length=8, max_length=128) = Field(..., description="User password (min 8 chars)")
 
 class UserLogin(BaseModel):
-    """
-    Schema for user login request.
-    """
+    """Schema for user login request."""
     email: EmailStr = Field(..., description="User's email address")
     password: constr(min_length=8, max_length=128) = Field(..., description="User password (min 8 chars)")
 
 class UserResponse(BaseModel):
-    """
-    Schema for user response data.
-    """
+    """Schema for user response data."""
     id: int
     email: EmailStr
     created_at: str
