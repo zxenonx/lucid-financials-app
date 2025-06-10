@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends, status, Request
+from fastapi import HTTPException
 from app.schemas.post import PostCreate
 from app.services.post_service import PostService
 from app.utils.auth import get_current_user
@@ -69,7 +70,8 @@ async def get_posts(
         db: The database session, injected by the dependency.
 
     Returns:
-        dict[str, Any]: A dictionary with the status, a list of the user's posts on success, and error details if applicable.
+        dict[str, Any]: A dictionary with the status, a list of the user's posts on success,
+        and error details if applicable.
 
     Raises:
         HTTPException: If authentication fails.
@@ -80,3 +82,32 @@ async def get_posts(
         "data": posts,
         "errors": None
     }
+
+@post_router.delete("/{post_id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_post(
+    post_id: str,
+    user: dict = Depends(get_current_user),
+    db = Depends(get_db)
+) -> None:
+    """Deletes a post for the authenticated user.
+
+    This endpoint accepts a postID and a token for authentication.
+    It deletes the corresponding post from the database if it belongs to the authenticated user.
+    Returns an error for invalid or missing token, or if the post does not exist or does not belong to the user.
+    DI is used for token authentication.
+
+    Args:
+        post_id (str): The unique ID of the post to delete.
+        user (dict): The authenticated user's information, injected by the dependency.
+        db: The database session, injected by the dependency.
+
+    Returns:
+        None
+
+    Raises:
+        HTTPException: If authentication fails, post is not found, or user is not authorized to delete the post.
+    """
+    result = PostService.delete_post(db, user_id=int(user["user_id"]), post_id=post_id)
+    if not result:
+        raise HTTPException(status_code=404, detail="Post not found or not authorized.")
+    return None
